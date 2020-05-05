@@ -75,7 +75,7 @@ const addOptions = (e) => {
         dbOperation.push(operationObj)
 
         intit()
-        
+
         operationName.value = ''
         operationAmount.value = ''
     } else if (!nameValue) operationName.style.borderColor = 'red'
@@ -89,7 +89,7 @@ const deleteOperation = (event) => {
         dbOperation = dbOperation.filter(operation => operation.id !== target.dataset.id)
 
         intit()
-    }    
+    }
 }
 
 form.addEventListener('submit', addOptions)
